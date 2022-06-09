@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="300.0" prefWidth="600.0">
+         <children>
+            <TabPane prefHeight="300.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" style="-fx-background-color: lightyellow">
+              <tabs>
+                <Tab text="Opcoes">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="242.0" prefWidth="373.0">
+                           <children>
+                              <GridPane prefHeight="267.0" prefWidth="600.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="406.0" minWidth="10.0" prefWidth="195.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="0.0" prefWidth="297.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Vertices" />
+                                    <TextField fx:id="verticesInput" prefHeight="28.0" prefWidth="300.0" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets bottom="60.0" top="60.0" />
+                                       </GridPane.margin></TextField>
+                                    <HBox prefHeight="0.0" prefWidth="207.0" GridPane.rowIndex="2">
+                                       <children>
+                                          <Button fx:id="setVertcies" mnemonicParsing="false" onMouseClicked="#setVertices" text="Set Vertices" style="-fx-background-color: lightblue"/>
+                                          <Button fx:id="setEdges" mnemonicParsing="false" text="Set Edges" style="-fx-background-color: violet"/>
+                                          <Button fx:id="clear" mnemonicParsing="false" text="Clear" style="-fx-background-color: lightgreen"/>
+                                       </children></HBox>
+                                    <Label text="Edges" GridPane.columnIndex="1" />
+                                    <TextArea fx:id="edgesInput" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Viewer">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                     <graphic>
+                        <Group />
+                     </graphic>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children></AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
