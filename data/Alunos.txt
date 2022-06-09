@@ -1,0 +1,4 @@
+Nuno Alexandre, 12, 15.5
+Pedro Lucas, 7, 18.5
+Antonio Miguel, 3, 14.5
+Outro Aluno, 3, 16.5
